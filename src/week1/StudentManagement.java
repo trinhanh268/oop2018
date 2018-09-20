@@ -16,6 +16,7 @@ public class StudentManagement {
     void studentsByGroup() {
         String[] groups = new String[MAX];
         int SizeGroup = 0;
+ 
         groups[0] = Students[0].GetGroup();
         boolean check = true;
 
@@ -70,11 +71,21 @@ public class StudentManagement {
         System.out.println(Stud.sameGroup(SV1,SV2));
         System.out.println(Stud.sameGroup(SV1,SV3));
 
+        for(int i = 0; i < Stud.MAX; i++){
+            Stud.Students[i] = new Student();
+            Stud.Students[i].SetId("UET " + i);
+            if(i%2==0){
+                Stud.Students[i].SetGroup("INT22041");
+            }
+            else Stud.Students[i].SetGroup("INT22042");
+                 
+        }
+
         System.out.println("Sort by group");
         Stud.studentsByGroup();
 
-
-        Stud.removeStudent("");
+        System.out.println("Delete Student");
+        Stud.removeStudent("UET 5");
         for (int i = 0; i < Stud.MAX; i++) {
             Stud.Students[i].getInfo();
         }
