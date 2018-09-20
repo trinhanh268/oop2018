@@ -7,7 +7,7 @@ public class StudentManagement {
     Student[] Students = new Student[MAX];
 
     public boolean sameGroup(Student s1, Student s2) {
-        if(s1.GetGroup().equals(s2.GetGroup()))
+        if(s1.GetGroup().equals(s2.GetGroup())==true)
             return true;
         else return false;
     }
