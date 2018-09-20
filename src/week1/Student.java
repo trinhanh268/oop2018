@@ -7,19 +7,19 @@ public class Student {
     // TODO: khai báo các phương thức getter, setter cho Student
     public void SetName( String n){
         this.name = n; }
-    public String Getname(){
+    public String GetName(){
         return name;}
-    public void SetID(String n){
+    public void SetId(String n){
         this.id = n;}
-    public String GetID(){
+    public String GetId(){
         return id;}
-    public void Setgroup(String n){
+    public void SetGroup(String n){
         this.group = n;}
-    public String Getgroup(){
+    public String GetGroup(){
         return group;}
-    public void Setemail( String n){
+    public void SetEmail( String n){
         this.email = n;}
-    public String Getemail(){
+    public String GetEmail(){
         return email;}
     /**
      * Constructor 1
@@ -58,7 +58,7 @@ public class Student {
         email = s.email;
     }
 
-    String getInfo() {
+    void getInfo() {
         // TODO:
         System.out.println("Ten : " + name + " " + "MaSV : " + id + " " + "Group : " + group + " " + "Email : " + email);
      
