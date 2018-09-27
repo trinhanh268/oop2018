@@ -42,8 +42,30 @@ public class Fraction {
     }
     public boolean equals(Fraction other)
     {
-        if ( this.numerator / this.denominator == other.numerator / other.denominator) return 1;
-        else return 0;
+        if ( this.numerator / this.denominator == other.numerator / other.denominator) return true;
+        else return false;
+    }
+    public static void main(String[] args){
+        Fraction num1 = new Fraction(-1,3);
+        Fraction num2 = new Fraction(-1,6);
+        Fraction result ;
+
+        result = num1.add(num2);
+        System.out.println(num1.numerator + "/" + num1.denominator + " + " + num2.numerator + "/" + num2.denominator + " = " + result.numerator + "/" + result.denominator);
+
+        result = num1.subtract(num2);
+        System.out.println(num1.numerator + "/" + num1.denominator + " - " + num2.numerator + "/" + num2.denominator + " = " + result.numerator + "/" + result.denominator);
+
+        result = num1.multiply(num2);
+        System.out.println(num1.numerator + "/" + num1.denominator + " * " + num2.numerator + "/" + num2.denominator + " = " + result.numerator + "/" + result.denominator);
+
+        result = num1.divide(num2);
+        System.out.println(num1.numerator + "/" + num1.denominator + " : " + num2.numerator + "/" + num2.denominator + " = " + result.numerator + "/" + result.denominator);
+
+        if(num1.equals(num2)){
+            System.out.println("Lon hon");
+        }
+        else System.out.println("Nho hon");
     }
 }
 
