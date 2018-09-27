@@ -11,38 +11,40 @@ public class Fraction {
         this.denominator = denominator;
      }
 
-    public Fraction add(Fraction other) {
+    public Fraction add(Fraction orther) {
         // TODO: Phương thức cộng hai phân số (this và other), trả về đối tượng Fraction mới
-        Fraction result;
+        Fraction result = new Fraction(0,0);
         result.numerator = this.numerator * orther.denominator + this.denominator * orther.numerator;
         result.denominator = this.denominator * orther.denominator;
         return result;
     }
 
-    public Fraction subtract(Fraction other) {
+    public Fraction subtract(Fraction orther) {
         // TODO: Phương thức trừ hai phân số (this và other), trả về đối tượng Fraction mới
-        Fraction result;
+        Fraction result = new Fraction(0,0);
         result.numerator = this.numerator * orther.denominator - orther.numerator * this.denominator;
         result.denominator = this.denominator * orther.denominator;
         return result;
     }
 
-    public Fraction multiply(Fraction other) {
+    public Fraction multiply(Fraction orther) {
         // TODO: Phương thức nhân hai phân số (this và other), trả về đối tượng Fraction mới
+        Fraction result = new Fraction(0,0);
         result.numerator = this.numerator * orther.numerator;
         result.denominator = this.denominator * orther.denominator;
         return result;
     }
 
-    public Fraction divide(Fraction other) {
+    public Fraction divide(Fraction orther) {
         // TODO: Phương thức chia hai phân số (this và other), trả về đối tượng Fraction mới
+        Fraction result = new Fraction(0,0);
         result.numerator = this.numerator * orther.denominator;
         result.denominator = this.denominator * orther.numerator;
         return result;
     }
-    public boolean equals(Fraction other)
+    public boolean equals(Fraction orther)
     {
-        if ( this.numerator / this.denominator == other.numerator / other.denominator) return true;
+        if ( this.numerator / this.denominator == orther.numerator / orther.denominator) return true;
         else return false;
     }
     public static void main(String[] args){
