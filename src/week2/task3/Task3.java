@@ -1,10 +1,9 @@
 package week2.task3;
 
-public class Task3 {
-  public person(){
-    public String name;
-    public int age;
-    public String job;
+class person{
+    private String name;
+    private int age;
+    private String job;
     public void Greeting(){
       System.out.print("Hello. My name is " + this.name);
     }
@@ -13,11 +12,12 @@ public class Task3 {
     }
     public void myjob(){
       System.out.print(this.job);
-    }}
-  public animal(){
-    public String kind;
-    public int age;
-    public int amount;
+    }
+}
+ class animal{
+    private String kind;
+    private int age;
+    private int amount;
     public void kind(){
       System.out.println(this.kind);
       System.out.println(this.amount + " left ");
@@ -29,11 +29,12 @@ public class Task3 {
     public void sell(){
       if(amount > 10000) System.out.println("Cheap");
       else System.out.println("Expensive");
-    }}
-    public car(){
-      public String color;
-      public int price;
-      public int speed;
+    }
+}
+class car{
+      private String color;
+      private int price;
+      private int speed;
       public void color(){
         System.out.println(this.color);
         }
@@ -41,9 +42,13 @@ public class Task3 {
         System.out.println(this.price);
       }
       public void speed(){
-        System.out.println(this.kind);
+        System.out.println(this.speed);
       }
-    }
+}
+public class Task3 {
+  public static void main(String[] args){
+ 
+  }
 }
     
 
