@@ -40,4 +40,10 @@ public class Fraction {
         result.denominator = this.denominator * orther.numerator;
         return result;
     }
+    public boolean equals(Fraction a, Fraction b)
+    {
+        if ( a.numerator / a.denominator == b.numerator / b.denominator) return 1;
+        else return 0;
+    }
 }
+
