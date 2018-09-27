@@ -48,8 +48,8 @@ public class Fraction {
         else return false;
     }
     public static void main(String[] args){
-        Fraction num1 = new Fraction(-1,3);
-        Fraction num2 = new Fraction(-1,6);
+        Fraction num1 = new Fraction(1,4);
+        Fraction num2 = new Fraction(2,8);
         Fraction result ;
 
         result = num1.add(num2);
