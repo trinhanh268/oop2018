@@ -13,13 +13,13 @@ public class Task1 {
         // TODO: Tìm số fibonacci ở vị trí n
         if ( n == 0) return 0;
         else if ( n == 1) return 1;
-        else if ( n > 1) return fibonacci( n - 1 ) + fibonacci( n - 2);
+        else  return fibonacci( n - 1 ) + fibonacci( n - 2);
     }
     public static void main(String[] args){
         int UCLN,i;
-        UCLN = gcd(32,16);
+        UCLN = gcd(36,24);
         System.out.println(UCLN);
 
-        System.out.println(i = fibonacci(9));
+        System.out.println(i = fibonacci(3));
     }
 }
