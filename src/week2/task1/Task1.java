@@ -7,7 +7,7 @@ public class Task1 {
        if(a%b==0)
            return Math.abs(b);
        else {
-           return gcd(b,b-a);
+           return gcd(b,a%b);
        }
     }
 
