@@ -4,9 +4,11 @@ public class Task1 {
 
     public static int gcd(int a, int b) {
         // TODO: Tính ước chung lớn nhất của 2 số a, b
-        if( a > b) return gcd( a - b, b);
-        else if ( a < b) return gcd( a, b - a);
-        else return a;
+       if(a%b==0)
+           return Math.abs(b);
+       else {
+           return gcd(b,b-a);
+       }
     }
 
     public static int fibonacci(int n) {
@@ -17,7 +19,7 @@ public class Task1 {
     }
     public static void main(String[] args){
         int UCLN,i;
-        UCLN = gcd(36,24);
+        UCLN = gcd(0,-4);
         System.out.println(UCLN);
 
         System.out.println(i = fibonacci(3));
