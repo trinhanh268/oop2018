@@ -14,8 +14,7 @@ public class Week3 {
         int min = array[0];
         for(int i = 0; i < array.length; i++)
         {
-            if(array[i] < array[i+1]) min = array[i];
-            else min = array[i+1];
+            if(min > array[i]) min = array[i];
         }
         return min;
     }
