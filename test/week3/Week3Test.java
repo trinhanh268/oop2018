@@ -9,7 +9,7 @@ public class Week3Test {
 
     // TODO: Viết 5 testcase cho phương thức max()
     @Test
-    void Testmax(){
+    public void Testmax(){
         assertEquals(5,Week3.max(5,2));
         assertEquals(4,Week3.max(4,1));
         assertEquals(8,Week3.max(6,8));
@@ -18,7 +18,7 @@ public class Week3Test {
     }
     // TODO: Viết 5 testcase cho phương thức minOfArray()
     @Test
-    void TestminOfArray(){
+    public void TestminOfArray(){
         int a[] = {3,5,4,8};
         int b[] = {12,8,9,11};
         int[] c = {1,5,6,9,4}  ;
@@ -32,7 +32,7 @@ public class Week3Test {
     }
     // TODO: Viết 5 testcase cho phương thức calculateBMI()
     @Test
-    void TestcalculateBMI(){
+    public void TestcalculateBMI(){
         assertEquals("Thieu can",Week3.calculateBMI(50,1.72));
         assertEquals("Binh thuong",Week3.calculateBMI(65,1.75));
         assertEquals("Thua can",Week3.calculateBMI(67,1.67));
