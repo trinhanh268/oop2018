@@ -29,12 +29,10 @@ public class Week3 {
     public static String calculateBMI(double weight, double height) {
         // TODO: Viết chương trình tính chỉ số BMI và in ra kết quả đánh giá
         double BMI;
-        String appearence;
         BMI = weight / ( height * height );
-        if ( BMI < 18.5 ) appearence = "Thieu can";
-        else if( BMI > 18.5 && BMI < 25) appearence = "Binh thuong";
-        else if( BMI >= 23 && BMI < 25) appearence = "Thua can";
-        else if( BMI >= 25 ) appearence = "Beo phi";
-        return appearence;
-            }
+        if ( BMI < 18.5 ) return  "Thieu can";
+        else if( BMI > 18.5 && BMI < 25) return  "Binh thuong";
+        else if( BMI >= 23 && BMI < 25) return  "Thua can";
+        else  return "Beo phi";
+    }
 }
