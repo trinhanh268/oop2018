@@ -5,8 +5,18 @@ public class Cam extends HoaQua{
   {
    super(gia, Season);
   }
-  public void checkgia(){
-    System.out.printf("Gia 1 can la: " + gia);
-    }
-   }
-    
+  /**
+   * xem gia ban
+   */
+  public void xemgia()
+  {
+   System.out.print("Gia ban: " + gia);
+  }
+  /**
+   * hoa qua mua gi
+   */
+  public void muagi()
+  {
+   System.out.printf("Hoa qua mua: " + Season);
+  }
+  }
