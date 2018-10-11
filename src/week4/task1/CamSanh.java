@@ -1,4 +1,4 @@
-package week4.task1
+package week4.task1;
 public class CamSanh extends Cam{
   public CamSanh(int gia, String Season){
   super(gia,Season);
