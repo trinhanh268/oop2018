@@ -1,4 +1,4 @@
-package week4.task1
+package week4.task1;
 
 public class Cam extends HoaQua{
   public Cam(int gia, String Season)
