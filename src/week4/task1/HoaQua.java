@@ -4,8 +4,8 @@ package week4.task1;
  * @author DucAnh
  */
  public class HoaQua{
-  private int gia;
-  private String Season;
+  public int gia;
+  public String Season;
   /**
     *@param gia gia ban trai cay
     */
