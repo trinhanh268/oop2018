@@ -1,4 +1,4 @@
-package lab06;
+package week5_6;
 
 public class Circle extends Shape {
 	private final double PI = 3.14159;
