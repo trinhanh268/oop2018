@@ -1,4 +1,4 @@
-package lab06;
+package week5_6;
 
 public class Triangle extends Shape {
 	private double side1 = 1.0;

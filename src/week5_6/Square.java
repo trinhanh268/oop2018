@@ -1,4 +1,4 @@
-package lab06;
+package week5_6;
 
 public class Square extends Rectangle {
 	
