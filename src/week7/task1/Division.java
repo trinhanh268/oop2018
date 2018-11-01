@@ -10,11 +10,21 @@ package week7.task1;
  * @author Trinh Duc Anh
  */
 public class Division extends Expression{
-    Expression n1, n2;
-    public Division(Expression nu1, Expression nu2)
+    Expression left, right;
+    public Division(Expression _left, Expression _right)
     {
-        this.n1 = nu1;
-        this.n2 = nu2;
+        this.left = _left;
+        this.right = _right;
+    }
+    @Override
+    public Expression left()
+    {
+        return this.left;
+    }
+    @Override
+    public Expression right()
+    {
+        return this.right;
     }
     @Override
     public String toString()
